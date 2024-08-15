@@ -305,7 +305,9 @@ option {
     color: black;
     background-color: #ffffff11;
 }
-
+.overlay>p{
+    margin: 15px;
+}
 .grid-lg {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -319,6 +321,7 @@ option {
     background-color: rgba(231, 137, 37, 0.107);
 }
 .item {
+    position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -326,12 +329,70 @@ option {
     height: 250px;
     display: flex;
 }
-
+.item1 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 255, 210, 0.5);
+    display: flex;
+    align-items: flex-end;
+}
+.item2 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0.3);
+    display: flex;
+}
+.item3 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: flex-end;
+}
+.item4 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+}
+.item5 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(66, 255, 0, 0.3);
+    display: flex;
+    align-items: flex-end;
+}
+.item6 .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rga(0, 71, 255, 0.3);
+    display: flex;
+    align-items: flex-end;
+}
 .item1 {
     grid-column: span 4;
     background-image: url('./images/exercise1.jpg');
     grid-area: item1;
-    align-items: flex-end;
+    
 }
 
 .item2 {
@@ -344,28 +405,24 @@ option {
     grid-column: span 5;
     background-image: url('./images/exercise3.png');
     grid-area: item3;
-    align-items: flex-end;
 }
 
 .item4 {
     grid-column: span 8;
     background-image: url('./images/exercise4.png');
     grid-area: item4;
-    justify-content: flex-end;
 }
 
 .item5 {
     grid-column: span 5;
     background-image: url('./images/exercise5.jpg');
     grid-area: item5;
-    align-items: flex-end;
 }
 
 .item6 {
     grid-column: span 6;
     background-image: url('./images/exercise6.jpg');
     grid-area: item6;
-    align-items: flex-end;
 }
 
 .img-size{
